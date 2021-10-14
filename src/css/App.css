@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-font-color: #fff;
+  --primary-background: #000;
+  --secondary-background: #262626;
+  --button-background: #fe5000;
+  --price-color: #279B37;
+  --circle-color: #4D4D4D;
+  --error-color: #FE2828;
+  --disabled-color: #2E2E2E;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  color: var(--main-font-color);
+  background: var(--primary-background);
+}
+
+.clr-container {
+  border-radius: 0% 0% 10px 10px;
+  background-color: var(--secondary-background);
+  height: 80px;
+  width: 60%;
+}
+
+.clr-btn:hover {
+  background: var(--button-background);
+  border-width: 0;
+}
+
+.quick-pick-btn:hover {
+  background: var(--price-color);
+  border-width: 0;
+}
+
+.bln-container {
+  height: 80px;
+}
+
+.price{
+  color:var(--price-color);
+}
+
+.play-all-btn{
+  background: var(--price-color)
+}
+
+.play-all-btn:hover{
+  background:#1f7c2c;
+}
+
+.play-all-btn-disabled{
+  background-color: var(--disabled-color);
+}
+
+.error-banner{
+  background-color: var(--error-color);
+}
